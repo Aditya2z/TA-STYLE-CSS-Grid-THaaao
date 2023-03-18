@@ -1,0 +1,11 @@
+.container-90 {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header" "main main main";
+}
+.nav-menu{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

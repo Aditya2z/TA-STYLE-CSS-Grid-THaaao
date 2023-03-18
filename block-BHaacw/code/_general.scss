@@ -1,0 +1,82 @@
+/* Custom Styling Starts Here */
+
+/* My Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    background-color: white;
+}
+
+/* General Styles */
+html {
+    font-size: 16px;
+}
+body {
+    max-width: 1370px;
+    width: 100%;
+    line-height: 1.5;
+    background-color: var(--tertiary);
+}
+button,
+input,
+select,
+textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+}
+img,
+audio,
+video {
+    width: 100%;
+}
+
+/* Containers */
+.container-90{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+/* Texts */
+.text {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* Buttons */
+button {
+    background: none;
+    color:var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: .25rem;
+}
+
+article {
+    background-color: white;
+}
