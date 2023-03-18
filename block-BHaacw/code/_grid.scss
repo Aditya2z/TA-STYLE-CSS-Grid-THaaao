@@ -2,10 +2,25 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "header" "main main main";
+    grid-template-areas: "header header header" "main main main";
 }
 .nav-menu{
     grid-area: header;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.nav-menu-item {
+    display: grid;
+    justify-items: center;
+}
+.article-2 {
+    grid-row: span 3 ;
+    display: grid;
+    justify-items: start;
+}
+
+.article-4 {
+    grid-row: span 2 ;
+    display: grid;
+    justify-items: start;
 }
