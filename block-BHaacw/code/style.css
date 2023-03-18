@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styling Starts Here */
+/* My Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  background-color: white;
+}
+
+/* General Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  max-width: 1370px;
+  width: 100%;
+  line-height: 1.5;
+  background-color: var(--tertiary);
+}
+
+button,
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 600;
+}
+
+img,
+audio,
+video {
+  width: 100%;
+}
+
+/* Containers */
+.container-90 {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+/* Texts */
+.text {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+/* Buttons */
+button {
+  background: none;
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+article {
+  background-color: white;
+}
+
+.container-90 {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "main main main";
+}
+
+.nav-menu {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.nav-menu-item {
+  display: grid;
+  justify-items: center;
+}
+
+.article-2 {
+  grid-row: span 3;
+  display: grid;
+  justify-items: start;
+}
+
+.article-4 {
+  grid-row: span 2;
+  display: grid;
+  justify-items: start;
+}
+
+/* Variables */
+:root {
+  --primary: #0095BE;
+  --secondary: #FC2E1B;
+  --tertiary: #3A4A4F;
+}/*# sourceMappingURL=style.css.map */
